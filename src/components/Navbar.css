@@ -1,0 +1,43 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 32px;
+    position: sticky;
+    top: 0;
+    background: rgba(17, 18, 20, .65);
+    backdrop-filter: saturate(160%) blur(10px);
+    border-bottom: 1px solid #232428;
+    z-index: 10
+}
+
+.brand a {
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: var(--text);
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    
+}
+
+nav {
+    display: flex;
+    gap: 10px
+}
+
+nav a {
+    color: var(--muted);
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 12px;
+    transition: .2s ease
+}
+
+nav a.active,
+nav a:hover {
+    background: #1b1c20;
+    color: #fff;
+    box-shadow: 0 0 0 1px #24262c inset
+}

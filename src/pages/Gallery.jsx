@@ -1,0 +1,60 @@
+import { useMemo, useState } from 'react'
+import site from '../site.config'
+import './Gallery.css'
+
+// Auto-import all images in src/assets/photos and subfolders
+const modules = import.meta.glob('../assets/photos/**/*.{jpg,jpeg,png,webp,avif,gif}', { eager: true })
+const allPhotos = Object.entries(modules).map(([path, mod]) => {
+  const url = mod.default
+  const parts = path.split('/')
+  const idx = parts.indexOf('photos')
+  const folder = parts[idx+1] && parts[idx+1].includes('.') ? 'Unsorted' : (parts[idx+1] || 'Unsorted')
+  return { url, folder }
+}).sort((a,b)=> a.url.localeCompare(b.url))
+
+export default function Gallery(){
+  const [active, setActive] = useState('All')
+  const folders = useMemo(()=> {
+    const set = new Set(allPhotos.map(p=>p.folder))
+    return ['All', ...Array.from(set).sort()]
+  },[])
+
+  const visible = active === 'All' ? allPhotos : allPhotos.filter(p=>p.folder === active)
+
+  // Lightbox
+  const [lightbox, setLightbox] = useState(null)
+
+  return (
+    <section className="gallery">
+      <div className="hero">
+        <div className="container">
+          <h1 className="title">{site.name}</h1>
+          <p className="tag">{site.tagline}</p>
+          <div className="tabs" role="tablist">
+            {folders.map(f => (
+              <button key={f} className={`tab ${active===f?'active':''}`} onClick={()=>setActive(f)} role="tab" aria-selected={active===f}>{f}</button>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {visible.length === 0 ? (
+        <p className="empty container">Add photos to src/assets/photos. Optional: create subfolders like portraits, events, travel to enable filters.</p>
+      ) : (
+        <div className="grid container">
+          {visible.map((p, i) => (
+            <figure key={i} className="card" onClick={()=>setLightbox(p.url)}>
+              <img loading="lazy" src={p.url} alt="" />
+            </figure>
+          ))}
+        </div>
+      )}
+
+      {lightbox && (
+        <div className="lightbox" onClick={()=>setLightbox(null)}>
+          <img src={lightbox} alt="" />
+        </div>
+      )}
+    </section>
+  )
+}
