@@ -104,3 +104,15 @@
         opacity: 1
     }
 }
+
+/* Loading state */
+.loading {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--muted);
+}
+
+.loading p {
+    font-size: 1.1rem;
+    margin: 0;
+}
