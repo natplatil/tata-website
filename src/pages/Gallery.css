@@ -108,3 +108,20 @@
         opacity: 1
     }
 }
+
+/* Mobile styles for smaller buttons */
+@media (max-width: 768px) {
+    .tabs {
+        flex-wrap: nowrap;
+        gap: 8px;
+        overflow-x: auto;
+        padding: 0 16px;
+    }
+    
+    .tab {
+        padding: 8px 16px;
+        font-size: 14px;
+        white-space: nowrap;
+        min-width: fit-content;
+    }
+}
