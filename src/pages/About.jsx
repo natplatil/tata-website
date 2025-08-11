@@ -6,8 +6,8 @@ export default function About(){
     <section className="about">
   <div className="about-banner" style={{ backgroundImage: `url('${encodeURI(site.aboutHero)}')` }}>
         <div className="banner-inner container">
-          <h1>About {site.owner.firstName}</h1>
-          <p className="banner-tag">{site.tagline}</p>
+          {/* <h1>About {site.owner.firstName}</h1>
+          <p className="banner-tag">{site.tagline}</p> */}
         </div>
       </div>
 
@@ -45,8 +45,8 @@ export default function About(){
             <p>High-resolution galleries, easy sharing, and print-ready files.</p>
           </div>
           <div className="callout">
-            <h4>Travel</h4>
-            <p>Available worldwide—reach out to plan your shoot.</p>
+            <h4>[insert something else]</h4>
+            <p>[insert  something]</p>
           </div>
         </div>
       </div>

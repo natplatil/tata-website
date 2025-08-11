@@ -9,7 +9,7 @@
 .title {
     font-family: Montserrat, sans-serif;
     text-transform: uppercase;
-    font-size: 2.3rem;
+    font-size: 3.0rem;
     letter-spacing: .14em;
     margin: 0
 }
@@ -22,7 +22,7 @@
 .tabs {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 18px;
     justify-content: center;
     margin: 16px 0 4px
 }
@@ -31,14 +31,16 @@
     background: #14161a;
     border: 1px solid #24262c;
     color: #cbd5e1;
-    padding: 8px 12px;
+    padding:24px 40px;
     border-radius: 999px;
-    cursor: pointer
+    cursor: pointer;
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
 }
 
 .tab.active {
-    background: #1d2026;
-    border-color: #3b3f46;
+    background: #010820;
+    border-color: #8db0ec;
     color: #fff;
     box-shadow: 0 0 0 1px #3b3f46 inset
 }
@@ -46,7 +48,9 @@
 .gallery .grid {
     columns: 320px;
     column-gap: 18px;
-    padding: 18px 0
+    padding: 18px 0;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .gallery .card {
@@ -55,7 +59,7 @@
     border-radius: 14px;
     overflow: hidden;
     background: #0f1012;
-    border: 1px solid #232428;
+    border: 0px solid #232428;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .25)
 }
 
@@ -103,16 +107,4 @@
     to {
         opacity: 1
     }
-}
-
-/* Loading state */
-.loading {
-    text-align: center;
-    padding: 60px 20px;
-    color: var(--muted);
-}
-
-.loading p {
-    font-size: 1.1rem;
-    margin: 0;
 }

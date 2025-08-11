@@ -42,8 +42,8 @@
 
 .about-hero {
     display: grid;
-    grid-template-columns: 120px 1fr;
-    gap: 18px;
+    grid-template-columns: 200px 1fr;
+    gap: 24px;
     align-items: center;
     margin-bottom: 12px
 }
@@ -72,7 +72,7 @@
 
 .panel {
     background: #111214;
-    border: 1px solid #232428;
+    border: 1px solid #6a6b6e;
     border-radius: 14px;
     padding: 18px
 }
@@ -98,7 +98,7 @@
 
 .chip {
     background: #14161a;
-    border: 1px solid #24262c;
+    border: 1px solid #8291ce;
     color: #cbd5e1;
     padding: 6px 10px;
     border-radius: 999px
@@ -112,8 +112,8 @@
 }
 
 .callout {
-    background: #0f1012;
-    border: 1px solid #232428;
+    background: #2a303d;
+    border: 1px solid #8291ce;
     border-radius: 12px;
     padding: 14px
 }
