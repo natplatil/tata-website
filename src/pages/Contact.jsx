@@ -24,6 +24,7 @@ export default function Contact(){
 
   return (
     <section className="contact">
+      <div className="about-banner" style={{ backgroundImage: `url('${encodeURI(site.contactHero)}')` }}></div>
       <div className="film-grain" aria-hidden />
       <div className="container">
         <header className="contact-hero">

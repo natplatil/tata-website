@@ -4,6 +4,7 @@ const site = {
   owner: { firstName: "Ladia", lastName: "Lastname" },
   about: "I’m Ladia, a photographer specializing in [insert specialty]. ",
   aboutHero: "/20231016_162613~2.jpg", // place your large photo in public/about-hero.jpg or change this path
+  contactHero: "/20231010_165828.jpg", // place your large photo in public/contact-hero.jpg or change this path
   specialties: ["Portraits", "Events", "Street", "Travel"],
   location: "Your City, Country",
   availability: "Available for local and travel assignments.",

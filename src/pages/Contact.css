@@ -39,7 +39,9 @@
 }
 
 .contact h1 {
-    font-family: "Playfair Display", serif;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .12em;
     margin: 0
 }
 
