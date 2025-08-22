@@ -21,7 +21,7 @@
     min-height: 320px;
     background-size: cover;
     background-position: center;
-    border-bottom: 1px solid #232428;
+    border-bottom: 1px solid #091958;
     display: flex;
     align-items: flex-end
 }
@@ -53,14 +53,15 @@
     height: 300px;
     border-radius: 999px;
     object-fit: cover;
-    border: 2px solid #232428;
+    border: 2px solid #b3c2c0;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .35)
 }
 
 .intro {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #e5e7eb
+    color: #553001;
+    white-space: pre-line;
 }
 
 .details {
@@ -71,8 +72,8 @@
 }
 
 .panel {
-    background: #111214;
-    border: 1px solid #6a6b6e;
+    background: #57554f;
+    border: 1px solid #e7e8ee;
     border-radius: 14px;
     padding: 18px
 }
@@ -84,7 +85,7 @@
 
 .details p,
 .details li {
-    color: #c8cbd2
+    color: #8c909b
 }
 
 .chips {
@@ -97,9 +98,9 @@
 }
 
 .chip {
-    background: #14161a;
-    border: 1px solid #8291ce;
-    color: #cbd5e1;
+    background: #7e5813;
+    border: 1px solid #ee9460;
+    color: #f3f3f3;
     padding: 6px 10px;
     border-radius: 999px
 }
@@ -112,8 +113,8 @@
 }
 
 .callout {
-    background: #2a303d;
-    border: 1px solid #8291ce;
+    background: #57554f;
+    border: 1px solid #e7e8ee;
     border-radius: 12px;
     padding: 14px
 }
