@@ -56,7 +56,7 @@
 }
 
 .card {
-    background: #F5F2ED;
+    background: #a06a0dbd;
     border: 1px solid #D4C4A8;
     border-radius: 14px;
     padding: 18px;
@@ -114,7 +114,7 @@ select {
 }
 
 .ok {
-    color: #22c55e
+    color: #c5229c
 }
 
 .err {

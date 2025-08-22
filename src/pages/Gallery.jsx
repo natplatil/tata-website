@@ -38,6 +38,17 @@ export default function Gallery(){
         </div>
       </div>
 
+      <div className="intro-section">
+        <div className="container">
+          <h2 className="intro-title">Art is Freedom</h2>
+          <p className="intro-text">
+            I believe portrait photography is more than capturing appearances — it's about revealing who you truly are.
+            <br /><br />
+            When we work together, I take the time to connect with you, to understand your personality, your style, and the environments where you feel most alive. Together, we'll create the right atmosphere so your portraits express both your essence and your individuality.
+          </p>
+        </div>
+      </div>
+
       {visible.length === 0 ? (
         <p className="empty container">Add photos to src/assets/photos. Optional: create subfolders like portraits, events, travel to enable filters.</p>
       ) : (

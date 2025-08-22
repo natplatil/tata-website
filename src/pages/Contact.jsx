@@ -91,29 +91,21 @@ export default function Contact(){
             <div className="process-step">
               <div className="process-number">1</div>
               <h4>Initial Consultation</h4>
-              <p>We discuss your vision, goals, and preferred style. I'll answer any questions and help plan the perfect session for you.</p>
+              <p>We begin with a conversation about your vision and my creative ideas for bringing it to life.</p>
             </div>
             <div className="process-step">
               <div className="process-number">2</div>
               <h4>Session Planning</h4>
-              <p>Together we'll choose the ideal location, timing, and mood. I handle all the technical details so you can focus on being yourself.</p>
+              <p>Depending on your needs, this may last from one hour to a full day, with styling and environment tailored to you.</p>
             </div>
             <div className="process-step">
               <div className="process-number">3</div>
-              <h4>The Photoshoot</h4>
-              <p>Relaxed, natural photography sessions where I capture authentic moments. I guide you through poses while keeping the atmosphere comfortable.</p>
+              <h4>Selection & Editing</h4>
+              <p>I carefully choose the best images, apply professional editing, and present you with portraits that reflect your true self.</p>
             </div>
-            <div className="process-step">
-              <div className="process-number">4</div>
-              <h4>Post-Production</h4>
-              <p>Careful editing and color grading to enhance the natural beauty of each image while maintaining an authentic, timeless feel.</p>
-            </div>
-            <div className="process-step">
-              <div className="process-number">5</div>
-              <h4>Delivery</h4>
-              <p>High-resolution gallery with easy sharing options and print-ready files. Your images are delivered within 1-2 weeks.</p>
-            </div>
+        
           </div>
+           <h3>If you have special requests, I am always happy to accommodate them. My goal is to deliver portraits you’ll not only love but feel proud of.</h3>
         </div>
       </div>
     </section>

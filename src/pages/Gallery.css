@@ -19,6 +19,29 @@
     color: var(--muted)
 }
 
+.intro-section {
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 1px solid #D4C4A8;
+}
+
+.intro-title {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: .12em;
+    margin: 0 0 20px;
+    color: #774d04;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #774d04;
+}
+
 .tabs {
     display: flex;
     flex-wrap: wrap;

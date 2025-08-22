@@ -21,7 +21,7 @@
     min-height: 320px;
     background-size: cover;
     background-position: center;
-    border-bottom: 1px solid #091958;
+    border-bottom: 1px solid #D4C4A8;
     display: flex;
     align-items: flex-end
 }
@@ -32,11 +32,11 @@
 
 .banner-inner h1 {
     font-size: 2.4rem;
-    text-shadow: 0 2px 20px rgba(0, 0, 0, .5)
+    text-shadow: 0 2px 20px rgba(255, 255, 255, .8)
 }
 
 .banner-tag {
-    color: #e5e7eb;
+    color: #5a4f42;
     opacity: .9
 }
 
@@ -53,14 +53,14 @@
     height: 300px;
     border-radius: 999px;
     object-fit: cover;
-    border: 2px solid #b3c2c0;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .35)
+    border: 2px solid #D4C4A8;
+    box-shadow: 0 10px 30px rgba(184, 160, 130, .25)
 }
 
 .intro {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #553001;
+    color: #5a4f42;
     white-space: pre-line;
 }
 
@@ -72,20 +72,20 @@
 }
 
 .panel {
-    background: #57554f;
-    border: 1px solid #e7e8ee;
+    background: #F5F2ED;
+    border: 1px solid #D4C4A8;
     border-radius: 14px;
     padding: 18px
 }
 
 .details h3 {
     margin: .3rem 0;
-    color: #cbd5e1
+    color: #3d3932
 }
 
 .details p,
 .details li {
-    color: #8c909b
+    color: #5a4f42
 }
 
 .chips {
@@ -98,9 +98,9 @@
 }
 
 .chip {
-    background: #7e5813;
-    border: 1px solid #ee9460;
-    color: #f3f3f3;
+    background: #B8A082;
+    border: 1px solid #C4B5A0;
+    color: #fff;
     padding: 6px 10px;
     border-radius: 999px
 }
@@ -113,15 +113,15 @@
 }
 
 .callout {
-    background: #57554f;
-    border: 1px solid #e7e8ee;
+    background: #F5F2ED;
+    border: 1px solid #D4C4A8;
     border-radius: 12px;
     padding: 14px
 }
 
 .callout h4 {
     margin: .2rem 0 .4rem;
-    color: #e5e7eb
+    color: #3d3932
 }
 
 @media (max-width: 840px) {
