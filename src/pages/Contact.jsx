@@ -75,12 +75,7 @@ export default function Contact(){
             <h3>Direct contact</h3>
             <p>Email: <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a></p>
             <div className="divider" />
-            <h3>Follow</h3>
-            <ul className="links">
-              {site.socials.instagram && <li><a href={site.socials.instagram} target="_blank" rel="noreferrer">Instagram</a></li>}
-              {site.socials.facebook && <li><a href={site.socials.facebook} target="_blank" rel="noreferrer">Facebook</a></li>}
-              {site.socials.twitter && <li><a href={site.socials.twitter} target="_blank" rel="noreferrer">X</a></li>}
-            </ul>
+           
             <div className="film-edge" aria-hidden />
           </aside>
         </div>

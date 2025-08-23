@@ -2,8 +2,8 @@
     position: relative;
     padding: 60px 0 18px;
     text-align: center;
-    background: linear-gradient(180deg, rgba(196, 181, 160, 0.3), rgba(0, 0, 0, 0));
-    border-bottom: 1px solid #D4C4A8
+    background: linear-gradient(180deg, rgba(229, 229, 229, 0.3), rgba(0, 0, 0, 0));
+    border-bottom: 1px solid #d1d5db
 }
 
 .title {
@@ -22,7 +22,7 @@
 .intro-section {
     padding: 40px 0;
     text-align: center;
-    border-bottom: 1px solid #D4C4A8;
+    border-bottom: 1px solid #d1d5db;
 }
 
 .intro-title {
@@ -31,7 +31,7 @@
     font-size: 1.8rem;
     letter-spacing: .12em;
     margin: 0 0 20px;
-    color: #774d04;
+    color: #4b5563;
 }
 
 .intro-text {
@@ -39,7 +39,7 @@
     margin: 0 auto;
     font-size: 1.1rem;
     line-height: 1.7;
-    color: #774d04;
+    color: #6b7280;
 }
 
 .tabs {
@@ -51,9 +51,9 @@
 }
 
 .tab {
-    background: #F5F2ED;
-    border: 1px solid #D4C4A8;
-    color: #492f01;
+    background: #f9fafb;
+    border: 1px solid #d1d5db;
+    color: #4b5563;
     padding:24px 40px; /*buttons*/
     border-radius: 999px;
     cursor: pointer;
@@ -62,10 +62,10 @@
 }
 
 .tab.active {
-    background: #885517a8;
-    border-color: #D4C4A8;
+    background: #6b7280;
+    border-color: #4b5563;
     color: #fff;
-    box-shadow: 0 0 0 1px #C4B5A0 inset
+    box-shadow: 0 0 0 1px #9ca3af inset
 }
 
 .gallery .grid {

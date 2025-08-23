@@ -12,9 +12,9 @@ export default function About(){
       </div>
 
       <div className="container">
-        <header className="about-hero">
+        <header className="about-hero" style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
           <img className="avatar" src="/profil.jpg" alt={`${site.owner.firstName} portrait`} />
-          <div>
+          <div style={{maxWidth: '600px', marginTop: '2rem'}}>
             <h2>Artist Statement</h2>
             <p className="intro">{site.about}</p>
           </div>
@@ -22,32 +22,63 @@ export default function About(){
 
         <div className="details">
           <div className="panel">
-            <h3>Specialties</h3>
-            <ul className="chips">
-              {site.specialties.map((s)=> <li className="chip" key={s}>{s}</li>)}
-            </ul>
+            <h3>Areas of Expertise</h3>
+
+            <h4>Portrait & People</h4>
+            <p>Fine Art Portraits</p>
+            <p>Personal Branding Photography</p>
+            <p>Family Portraits</p>
+
+            <h4>Events & Lifestyle</h4>
+            <p>Journal Documentary</p>
+            <p>Lifestyle Photography (everyday, candid, documentary style)</p>
+            <p>Corporate Events</p>
+            <p>Performances & Cultural Events</p>
+
+            <h4>Creative & Editorial</h4>
+            <p>Fashion Photography</p>
+            <p>Editorial Portraits (for magazines, blogs, features)</p>
+            <p>Conceptual / Artistic Projects</p>
+            <p>Black & White Portraiture</p>
+
+            <h4>Commercial & Business</h4>
+            <p>Product Photography</p>
+            <p>Food Photography</p>
+            <p>Corporate Branding / Team Photography</p>
+
+             <h4>Travel & Nature</h4>
+            <p>Travel Photography</p>
+            <p>Street Photography</p>
+            <p>Landscape Photography</p>
+
+
           </div>
           <div className="panel">
             <h3>Location</h3>
             <p>{site.location}</p>
-            <h3>Availability</h3>
-            <p>{site.availability}</p>
           </div>
         </div>
 
-        <div className="callouts">
-          <div className="callout">
-            <h4>Approach</h4>
-            <p>Real moments, natural light, and honest storytelling.</p>
+        <div className="process-section">
+          <h2>My Process</h2>
+          <div className="process-grid">
+            <div className="process-step">
+              <div className="process-number">1</div>
+              <h4>Initial Consultation</h4>
+              <p>We begin with a conversation about your vision and my creative ideas for bringing it to life.</p>
+            </div>
+            <div className="process-step">
+              <div className="process-number">2</div>
+              <h4>Session Planning</h4>
+              <p>Depending on your needs, this may last from one hour to a full day, with styling and environment tailored to you.</p>
+            </div>
+            <div className="process-step">
+              <div className="process-number">3</div>
+              <h4>Selection & Editing</h4>
+              <p>I carefully choose the best images, apply professional editing, and present you with portraits that reflect your true self.</p>
+            </div>
           </div>
-          <div className="callout">
-            <h4>Deliverables</h4>
-            <p>High-resolution galleries, easy sharing, and print-ready files.</p>
-          </div>
-          <div className="callout">
-            <h4>[insert something else]</h4>
-            <p>[insert  something]</p>
-          </div>
+          <h3>If you have special requests, I am always happy to accommodate them. My goal is to deliver portraits you’ll not only love but feel proud of.</h3>
         </div>
       </div>
     </section>
