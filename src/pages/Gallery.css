@@ -123,6 +123,17 @@
     box-shadow: 0 20px 60px rgba(184, 160, 130, .4)
 }
 
+.main-banner {
+    height: 72vh;
+    min-height: 320px;
+    background-size: cover;
+    background-position: center top;
+    border-bottom: 1px solid #d1d5db;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
 @keyframes fade {
     from {
         opacity: 0

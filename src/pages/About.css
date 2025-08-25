@@ -18,13 +18,14 @@
 }
 
 .about-banner {
-    height: 72vh;
+    height: 90vh;
     min-height: 320px;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     border-bottom: 1px solid #d1d5db;
     display: flex;
-    align-items: flex-end
+    align-items: flex-end;
+    width: 100%;
 }
 
 .banner-inner {
@@ -78,7 +79,11 @@
     background: #ffffff;
     border: 1px solid #d1d5db;
     border-radius: 14px;
-    padding: 18px
+    padding: 18px;
+    
+    /* padding on top*/
+    padding-top: 12px;
+
 }
 
 .details h3 {

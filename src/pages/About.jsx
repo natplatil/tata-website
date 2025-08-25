@@ -1,10 +1,10 @@
 import site from '../site.config'
 import './About.css'
 
-export default function About(){
+export default function About() {
   return (
     <section className="about">
-  <div className="about-banner" style={{ backgroundImage: `url('${encodeURI(site.aboutHero)}')` }}>
+      <div className="about-banner" style={{ backgroundImage: `url('${encodeURI(site.aboutHero)}')` }}>
         <div className="banner-inner container">
           {/* <h1>About {site.owner.firstName}</h1>
           <p className="banner-tag">{site.tagline}</p> */}
@@ -12,51 +12,60 @@ export default function About(){
       </div>
 
       <div className="container">
-        <header className="about-hero" style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-          <img className="avatar" src="/profil.jpg" alt={`${site.owner.firstName} portrait`} />
-          <div style={{maxWidth: '600px', marginTop: '2rem'}}>
-            <h2>Artist Statement</h2>
+        <header className="about-hero" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          {/* <img className="avatar" src="/profil.jpg" alt={`${site.owner.firstName} portrait`} loading="lazy" /> */}
+         
+          <div style={{ maxWidth: '1200px', marginTop: '2rem' }}>
+            <h2>Art is Life, as much as Life is Art.</h2>
             <p className="intro">{site.about}</p>
           </div>
-        </header>
 
+        </header>
+        <h2>Areas of Expertise</h2>
         <div className="details">
+
           <div className="panel">
-            <h3>Areas of Expertise</h3>
 
             <h4>Portrait & People</h4>
             <p>Fine Art Portraits</p>
             <p>Personal Branding Photography</p>
             <p>Family Portraits</p>
+          </div>
 
+          <div className="panel">
             <h4>Events & Lifestyle</h4>
             <p>Journal Documentary</p>
             <p>Lifestyle Photography (everyday, candid, documentary style)</p>
             <p>Corporate Events</p>
             <p>Performances & Cultural Events</p>
+          </div>
+
+          <div className="panel">
 
             <h4>Creative & Editorial</h4>
             <p>Fashion Photography</p>
             <p>Editorial Portraits (for magazines, blogs, features)</p>
             <p>Conceptual / Artistic Projects</p>
             <p>Black & White Portraiture</p>
-
+          </div>
+          <div className="panel">
             <h4>Commercial & Business</h4>
             <p>Product Photography</p>
             <p>Food Photography</p>
             <p>Corporate Branding / Team Photography</p>
-
-             <h4>Travel & Nature</h4>
+          </div>
+          <div className="panel">
+            <h4>Travel & Nature</h4>
             <p>Travel Photography</p>
             <p>Street Photography</p>
             <p>Landscape Photography</p>
 
 
           </div>
-          <div className="panel">
+          {/* <div className="panel">
             <h3>Location</h3>
             <p>{site.location}</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="process-section">

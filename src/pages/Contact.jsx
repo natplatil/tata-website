@@ -81,7 +81,7 @@ export default function Contact(){
         </div>
 
         <div className="process-section">
-          <h2>My Process</h2>
+          <h1>My Process</h1>
           <div className="process-grid">
             <div className="process-step">
               <div className="process-number">1</div>
